@@ -3,137 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | BIM & AI Digital Transformation</title>
+    <title>Professional Portfolio | 2025-2026</title>
     <script src="https://cdn.tailwindcss.org"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; }
-        .gradient-text { background: linear-gradient(90deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .card { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); transition: all 0.3s ease; }
-        .card:hover { transform: translateY(-5px); border-color: #38bdf8; }
-        .timeline-border { border-left: 2px solid #334155; }
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Noto+Sans+TC:wght@300;400;700&display=swap');
+        
+        :root {
+            --jp-blue: #1a365d; /* 紺青 */
+            --jp-red: #c53030;  /* 朱紅 */
+            --jp-bg: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Noto Sans JP', 'Noto Sans TC', sans-serif;
+            background-color: var(--jp-bg);
+            color: #2d3748;
+            scroll-behavior: smooth;
+        }
+
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(8px);
+            border-bottom: 2px solid var(--jp-blue);
+        }
+
+        .section-title {
+            border-left: 8px solid var(--jp-blue);
+            padding-left: 1rem;
+            background: linear-gradient(90deg, #e2e8f0 0%, transparent 100%);
+        }
+
+        .project-card {
+            border-top: 4px solid var(--jp-blue);
+            transition: transform 0.2s;
+        }
+
+        .highlight-red {
+            border-top: 4px solid var(--jp-red);
+        }
+
+        .tag {
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+            background: #edf2f7;
+            color: #4a5568;
+        }
     </style>
 </head>
-<body class="antialiased">
+<body class="line-numbers">
 
-    <header class="max-w-5xl mx-auto px-6 py-20 text-center">
-        <h1 class="text-5xl font-extrabold mb-4">Work Experience <span class="gradient-text">2025 - 2026</span></h1>
-        <p class="text-slate-400 text-lg max-w-2xl mx-auto">
-            專注於 BIM 工程數位化、AI 流程自動化導入與跨部門系統管理，現任總經理特助。
-        </p>
-        <div class="mt-8 flex justify-center gap-4 text-sm">
-            <span class="px-4 py-2 rounded-full bg-sky-500/10 text-sky-400 border border-sky-500/20">BIM Management</span>
-            <span class="px-4 py-2 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">AI Integration</span>
-            <span class="px-4 py-2 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Strategic Planning</span>
-        </div>
+    <header class="bg-[#1a365d] text-white py-16 px-6 text-center">
+        <h1 class="text-4xl font-bold tracking-tighter mb-4">專案經歷暨數位轉型紀實</h1>
+        <p class="text-blue-100 font-light tracking-widest uppercase text-sm">BIM Management & AI Integration Portfolio</p>
     </header>
 
-    <main class="max-w-5xl mx-auto px-6 pb-20">
+    <nav class="sticky-nav px-4 overflow-x-auto shadow-sm">
+        <div class="max-w-5xl mx-auto flex whitespace-nowrap space-x-8 py-4 text-sm font-bold">
+            <a href="#2026" class="text-red-700 hover:text-red-500">📍 2026 重點核心</a>
+            <a href="#edu" class="text-slate-700 hover:text-blue-600">🎓 教育訓練</a>
+            <a href="#business" class="text-slate-700 hover:text-blue-600">💼 業務開發</a>
+            <a href="#awards" class="text-slate-700 hover:text-blue-600">🏆 獲獎與參展</a>
+            <a href="#projects" class="text-slate-700 hover:text-blue-600">🏗️ 工程專案</a>
+        </div>
+    </nav>
 
-        <section class="mb-16">
-            <div class="flex items-center gap-4 mb-8">
-                <h2 class="text-3xl font-bold italic text-sky-400">2026</h2>
-                <div class="h-[1px] flex-grow bg-sky-500/30"></div>
-                <span class="text-xs uppercase tracking-widest text-slate-500">Current Focus</span>
-            </div>
+    <main class="max-w-5xl mx-auto px-6 py-12 space-y-20">
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="card p-6 rounded-2xl border-l-4 border-l-purple-500">
-                    <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-xl font-bold text-white">工程部 AI 導入專案</h3>
-                        <i class="fas fa-robot text-purple-500 text-2xl"></i>
-                    </div>
-                    <ul class="space-y-3 text-slate-300 text-sm">
-                        <li><i class="fas fa-check-circle text-purple-400 mr-2"></i><b>AI 導入藍圖：</b>縮減 20% 基礎工時，優化法規檢索與構件命名。</li>
-                        <li><i class="fas fa-check-circle text-purple-400 mr-2"></i><b>技術對接：</b>主導第三方廠商開發，確保符合 BIM 專業實務。</li>
-                        <li><i class="fas fa-check-circle text-purple-400 mr-2"></i><b>進度控管：</b>定期匯報 AI Agent 成效，對接 Revit/ArchiCAD 流。</li>
+        <section id="2026" class="space-y-8">
+            <h2 class="section-title text-2xl font-bold text-slate-800 flex items-center gap-2" style="border-left-color: var(--jp-red);">
+                <span class="text-sm bg-red-600 text-white px-2 py-1 rounded">2026</span> 數位轉型與管理
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="project-card highlight-red bg-white p-6 shadow-sm rounded-b-lg">
+                    <h3 class="text-xl font-bold text-red-800 mb-4">🤖 工程部 AI 導入專案</h3>
+                    <ul class="space-y-4 text-sm leading-relaxed">
+                        <li class="flex gap-2"><span>🎯</span> <b>AI 導入藍圖：</b>針對 BIM 流程分析高重複性作業，以縮減 20% 基礎工時為目標。</li>
+                        <li class="flex gap-2"><span>🤝</span> <b>第三方技術對接：</b>擔任公司與 AI 供應商聯繫人，確保開發邏輯符合建築實務。</li>
+                        <li class="flex gap-2"><span>📊</span> <b>進度控管：</b>彙報 AI Agent 導入成效，確保與 Revit/ArchiCAD 工作流無縫接軌。</li>
                     </ul>
                 </div>
 
-                <div class="card p-6 rounded-2xl border-l-4 border-l-emerald-500">
-                    <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-xl font-bold text-white">系統部工作盤點與管理</h3>
-                        <i class="fas fa-network-wired text-emerald-500 text-2xl"></i>
-                    </div>
-                    <ul class="space-y-3 text-slate-300 text-sm">
-                        <li><i class="fas fa-arrow-right text-emerald-400 mr-2"></i><b>流程審計：</b>導入自動化工具，減少 30% 重複作業。</li>
-                        <li><i class="fas fa-arrow-right text-emerald-400 mr-2"></i><b>SOP 建構：</b>定義對接窗口與格式，降低 25% 傳遞錯誤。</li>
-                        <li><i class="fas fa-arrow-right text-emerald-400 mr-2"></i><b>雲端協作：</b>推動無紙化，提升專案簽核與決策效率。</li>
+                <div class="project-card highlight-red bg-white p-6 shadow-sm rounded-b-lg">
+                    <h3 class="text-xl font-bold text-red-800 mb-4">⚙️ 系統部工作盤點與管理</h3>
+                    <ul class="space-y-4 text-sm leading-relaxed">
+                        <li class="flex gap-2"><span>🔍</span> <b>數位流程審計：</b>識別冗餘環節，導入自動化工具減少 30% 重複作業。</li>
+                        <li class="flex gap-2"><span>📄</span> <b>SOP 標準化：</b>重新定義跨部門對接窗口，降低 25% 資訊傳遞錯誤率。</li>
+                        <li class="flex gap-2"><span>☁️</span> <b>雲端協作：</b>推動無紙化方案，提升專案簽核與決策效率。</li>
                     </ul>
-                </div>
-            </div>
-
-            <div class="mt-6 card p-6 rounded-2xl">
-                <h3 class="font-bold mb-4 text-slate-200 uppercase tracking-tighter">業務開發 & 教育訓練</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-slate-400">
-                    <div>
-                        <p class="text-sky-400 mb-1">備標專案管理</p>
-                        <p>台中火力發電廠二期、桃園茄苳社宅備標動畫</p>
-                    </div>
-                    <div>
-                        <p class="text-sky-400 mb-1">專業課程</p>
-                        <p>2/6 備標影片案動畫製作</p>
-                    </div>
                 </div>
             </div>
         </section>
 
-        <section>
-            <div class="flex items-center gap-4 mb-8">
-                <h2 class="text-3xl font-bold italic text-slate-400">2025</h2>
-                <div class="h-[1px] flex-grow bg-slate-700"></div>
-            </div>
-
-            <div class="space-y-8 timeline-border ml-4 pl-8">
-                <div class="relative">
-                    <div class="absolute -left-10 top-1 w-4 h-4 bg-slate-700 rounded-full border-4 border-slate-900"></div>
-                    <h3 class="text-xl font-bold text-slate-200 mb-4">教育訓練與資源平台</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div class="bg-slate-800/50 p-4 rounded-xl border border-white/5">
-                            <h4 class="text-sky-400 text-xs font-bold uppercase mb-2">專業課程規劃</h4>
-                            <ul class="text-[13px] text-slate-400 grid grid-cols-1 gap-1">
-                                <li>1/9 捷運下構建模 | 1/23 專案資料管理</li>
-                                <li>2/25 機電戰鬥營 | 3/28 成本人時管理</li>
-                                <li>5/15 Trimble+Navisworks | 7/31 碳排計算</li>
-                                <li>8/15 CoBie | 9/12 捷運案執行要點</li>
+        <section id="edu" class="space-y-8">
+            <h2 class="section-title text-2xl font-bold text-slate-800">🎓 教育訓練規劃 (2025-2026)</h2>
+            <div class="bg-white p-8 border shadow-sm rounded-lg">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <div>
+                        <h4 class="font-bold text-blue-800 mb-4 flex items-center gap-2">📘 專業課程排程</h4>
+                        <div class="space-y-2 text-sm">
+                            <p class="border-b pb-1"><span class="text-blue-600 font-mono">1/09</span> 捷運下構建模</p>
+                            <p class="border-b pb-1"><span class="text-blue-600 font-mono">1/23</span> 專案資料管理</p>
+                            <p class="border-b pb-1"><span class="text-blue-600 font-mono">2/25</span> 機電戰鬥營</p>
+                            <p class="border-b pb-1"><span class="text-blue-600 font-mono">3/14</span> Lumion 渲染應用</p>
+                            <p class="border-b pb-1"><span class="text-blue-600 font-mono">3/28</span> 專案成本及人時管理</p>
+                            <p class="border-b pb-1"><span class="text-blue-600 font-mono">5/15</span> Trimble + Navisworks</p>
+                            <p class="border-b pb-1"><span class="text-blue-600 font-mono">7/31</span> 環境分析+碳排計算</p>
+                            <p class="border-b pb-1"><span class="text-blue-600 font-mono">8/15</span> CoBie 資料交換規範</p>
+                            <p class="border-b pb-1"><span class="text-blue-600 font-mono">9/12</span> 捷運案執行要點</p>
+                            <p class="border-b pb-1 text-red-600 font-bold"><span class="font-mono">2026.2</span> 備標影片案動畫製作</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-bold text-blue-800 mb-4 flex items-center gap-2">☕ 經驗分享會</h4>
+                            <ul class="text-sm space-y-2">
+                                <li>✨ 社宅案經驗分享 (5/28)</li>
+                                <li>✨ 社宅案機電建模要點 (8/22)</li>
+                                <li>✨ 社宅案房型檢討要點 (9/19)</li>
+                                <li>✨ 專案團隊溝通分享 (10/14)</li>
+                                <li>✨ 社宅案竣工驗收要點 (11/28)</li>
                             </ul>
                         </div>
-                        <div class="bg-slate-800/50 p-4 rounded-xl border border-white/5">
-                            <h4 class="text-purple-400 text-xs font-bold uppercase mb-2">分享會與制度</h4>
-                            <p class="text-[13px] text-slate-400">主導社宅案建模、檢討、驗收等 5 場大型經驗分享。建立新人考試制度、筆試考題與建模發題時控。</p>
+                        <div class="bg-slate-50 p-4 rounded border-l-4 border-slate-400 text-sm">
+                            <h4 class="font-bold mb-2">📝 新人制度管理</h4>
+                            <p class="text-slate-600">包含設計制度、筆試建檔、建模考試發題、簡報模板製作、說明會及時程管控。</p>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="relative">
-                    <div class="absolute -left-10 top-1 w-4 h-4 bg-slate-700 rounded-full border-4 border-slate-900"></div>
-                    <h3 class="text-xl font-bold text-slate-200 mb-4">業務開發與備標管理</h3>
-                    <p class="text-sm text-slate-400 mb-4">負責多項國家級大型基礎建設備標動畫與服務建議書撰寫：</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-slate-800 px-3 py-1 rounded text-xs">中油七接/四接備標</span>
-                        <span class="bg-slate-800 px-3 py-1 rounded text-xs">國一甲備標動畫</span>
-                        <span class="bg-slate-800 px-3 py-1 rounded text-xs">台中捷運藍線規範</span>
-                        <span class="bg-slate-800 px-3 py-1 rounded text-xs">高雄科工館 BIM</span>
-                        <span class="bg-slate-800 px-3 py-1 rounded text-xs">長庚醫院 AR POC</span>
-                    </div>
+        <section id="business" class="space-y-8">
+            <h2 class="section-title text-2xl font-bold text-slate-800">💼 業務開發與備標管理</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="card bg-white p-6 border shadow-sm">
+                    <span class="text-2xl">⚓</span>
+                    <h4 class="font-bold my-2 text-blue-900">中油備標專案</h4>
+                    <p class="text-xs text-slate-500 mb-4">動畫製作與管理</p>
+                    <ul class="text-xs space-y-2 text-slate-600">
+                        <li>• 高雄港七接備標</li>
+                        <li>• 協和電廠四接備標</li>
+                    </ul>
                 </div>
-
-                <div class="relative">
-                    <div class="absolute -left-10 top-1 w-4 h-4 bg-amber-500 rounded-full border-4 border-slate-900 shadow-[0_0_10px_rgba(245,158,11,0.5)]"></div>
-                    <h3 class="text-xl font-bold text-amber-500 mb-2 underline decoration-amber-500/30 underline-offset-4">公共工程獎項參展</h3>
-                    <ul class="text-sm text-slate-300 space-y-1">
-                        <li>🏆 <b>淡江大橋施工階段 BIM 應用：</b>工程數位創新獎影片製作。</li>
-                        <li>🏆 <b>菓林重劃區：</b>公共工程金質獎影片與文宣品製作。</li>
+                <div class="card bg-white p-6 border shadow-sm">
+                    <span class="text-2xl">🛣️</span>
+                    <h4 class="font-bold my-2 text-blue-900">國道與捷運</h4>
+                    <p class="text-xs text-slate-500 mb-4">動畫與技術規範</p>
+                    <ul class="text-xs space-y-2 text-slate-600">
+                        <li>• 國道一號甲線備標動畫</li>
+                        <li>• 台中捷運藍線 BIM 採購規範</li>
+                    </ul>
+                </div>
+                <div class="card bg-white p-6 border shadow-sm">
+                    <span class="text-2xl">🏙️</span>
+                    <h4 class="font-bold my-2 text-blue-900">其他業務開發</h4>
+                    <p class="text-xs text-slate-500 mb-4">窗口、報價、影片</p>
+                    <ul class="text-xs space-y-2 text-slate-600">
+                        <li>• 台北市公園處遊具管理系統</li>
+                        <li>• 長庚醫院 AR POC 案</li>
+                        <li>• 合作金庫寶通大樓都更</li>
                     </ul>
                 </div>
             </div>
         </section>
+
+        <section id="awards" class="space-y-8">
+            <h2 class="section-title text-2xl font-bold text-slate-800">🏆 獲獎與公共工程參展</h2>
+            <div class="space-y-4">
+                <div class="flex items-center gap-6 bg-white p-6 border rounded-lg shadow-sm">
+                    <div class="bg-amber-100 text-amber-700 p-4 rounded-full font-bold">獎</div>
+                    <div>
+                        <h4 class="font-bold text-slate-800">淡江大橋施工階段 BIM 應用</h4>
+                        <p class="text-sm text-slate-500">工程數位創新獎 - 影片製作</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-6 bg-white p-6 border rounded-lg shadow-sm">
+                    <div class="bg-amber-100 text-amber-700 p-4 rounded-full font-bold">獎</div>
+                    <div>
+                        <h4 class="font-bold text-slate-800">菓林重劃區</h4>
+                        <p class="text-sm text-slate-500">公共工程金質獎參獎 - 影片、文宣品製作</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="space-y-8">
+            <h2 class="section-title text-2xl font-bold text-slate-800">🏗️ 工程專案管理 (BIM)</h2>
+            <div class="bg-[#1a365d] text-white p-8 rounded-xl shadow-lg">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <h4 class="text-blue-300 font-bold uppercase tracking-widest text-xs">Project Updates</h4>
+                        <h3 class="text-xl font-bold italic">環狀線 Y19A 站</h3>
+                        <p class="text-sm text-blue-100/80 leading-relaxed">主導工程困難展延說明影片製作，透過 BIM 模型與動畫模擬，有效向業主溝通現場施工困境與工期調整之必要性。</p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white/10 p-4 rounded">
+                            <p class="text-2xl mb-1">📈</p>
+                            <p class="text-xs font-bold">每月資料更新</p>
+                            <p class="text-[10px] opacity-70">人時及成本線圖分析</p>
+                        </div>
+                        <div class="bg-white/10 p-4 rounded">
+                            <p class="text-2xl mb-1">🛠️</p>
+                            <p class="text-xs font-bold">工單系統</p>
+                            <p class="text-[10px] opacity-70">數據整理與流程優化</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer class="text-center py-10 border-t border-slate-800 text-slate-500 text-sm">
-        <p>© 2026 | BIM Digital Innovation Portfolio</p>
-        <p class="mt-2 italic">Crafted with Vibe Coding Concept</p>
+    <footer class="bg-slate-200 py-12 text-center text-slate-500 text-sm">
+        <p class="font-bold mb-2">BIM & AI Digital Strategy Portfolio</p>
+        <p>Managed in 2025-2026 | Developed with Vibe Coding</p>
     </footer>
 
 </body>
